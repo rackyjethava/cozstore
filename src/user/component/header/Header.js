@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 function Header(props) {
     return (
@@ -37,7 +38,7 @@ function Header(props) {
                         <div className="menu-desktop">
                             <ul className="main-menu">
                                 <li className="active-menu">
-                                    <a href="index.html">Home</a>
+                                    <NavLink to="/">Home</NavLink>
                                     <ul className="sub-menu">
                                         <li><a href="index.html">Homepage 1</a></li>
                                         <li><a href="home-02.html">Homepage 2</a></li>
@@ -45,19 +46,19 @@ function Header(props) {
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="product.html">Shop</a>
+                                    <NavLink to="/shop" >Shop</NavLink>
                                 </li>
                                 <li className="label1" data-label1="hot">
-                                    <a href="shoping-cart.html">Features</a>
+                                    <NavLink to="/features" >Features</NavLink>
                                 </li>
                                 <li>
-                                    <a href="blog.html">Blog</a>
+                                    <NavLink to="/blog" >Blog</NavLink>
                                 </li>
                                 <li>
-                                    <a href="about.html">About</a>
+                                    <NavLink to="/about" >About</NavLink>
                                 </li>
                                 <li>
-                                    <a href="contact.html">Contact</a>
+                                    <NavLink to="/contect">Contact</NavLink>
                                 </li>
                             </ul>
                         </div>
