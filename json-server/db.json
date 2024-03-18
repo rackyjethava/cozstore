@@ -1,0 +1,100 @@
+ {
+    "products" : [
+    {
+        "id": 1,
+       " name": "Esprit Ruffle Shirt",
+        "price": 16.64,
+        "image": "images/product-01.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Herschel supply",
+        "price": 35.31,
+        "image": "images/product-02.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Only Check Trouser",
+        "price": 25.50,
+        "image": "images/product-03.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Classic Trench Coat",
+        "price": 75.00,
+        "image": "images/product-04.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Front Pocket Jumper",
+        "price": 34.75,
+        "image": "images/product-05.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Vintage Inspired Classic",
+        "price": 93.20,
+        "image": "images/product-06.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Shirt in Stretch Cotton",
+        "price": 52.66,
+        "image": "images/product-07.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Pieces Metallic Printed",
+        "price": 18.96,
+        "image": "images/product-08.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Converse All Star Hi Plimsolls",
+        "price": 75.00,
+        "image": "images/product-09.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Femme T-Shirt In Stripe",
+        "price": 25.85,
+        "image": "images/product-10.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Herschel supply",
+        "price": 63.16,
+        "image": "images/product-11.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Herschel supply",
+        "price": 63.15,
+        "image": "images/product-12.jpg"
+    },
+    {
+        "id": 13,
+        "name": "T-Shirt with Sleeve",
+        "price": 18.49,
+        "image": "images/product-13.jpg"
+    },
+    {
+        "id": 14,
+        "name": "Pretty Little Thing",
+        "price": 54.79,
+        "image": "images/product-14.jpg"
+    },
+    {
+        "id": 15,
+        "name": "Mini Silver Mesh Watch",
+        "price": 86.85,
+        "image": "images/product-15.jpg"
+    },
+    {
+        "id": 16,
+        "name": "Square Neck Back",
+        "price": 29.64,
+        "image": "images/product-16.jpg"
+    }
+]
+}

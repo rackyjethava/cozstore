@@ -1,0 +1,31 @@
+.slideContent {
+    position: relative;
+}
+
+.slideContent img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.slideContent > div {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.slideContent span {
+    font-size: 24px; /* Adjust the size as needed */
+}
+
+.slideContent h2 {
+    font-size: 36px; /* Adjust the size as needed */
+}
+
+.slideContent a {
+    font-size: 18px; /* Adjust the size as needed */
+    color: #FF5733; /* Change color to whatever you prefer */
+}
