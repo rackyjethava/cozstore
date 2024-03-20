@@ -1,6 +1,29 @@
 import React from 'react';
+import { object, string, number, date, InferType } from 'yup';
+import { useFormik } from 'formik';
 
 function Contect(props) {
+
+    let contectSchema = object({
+  
+        email: string().email().required(),
+
+        message: string().required().min(10),
+
+    });
+
+    const formik = useFormik({
+        initialValues: {
+            email: '',
+            message: '',
+        },
+        validationSchema: contectSchema,
+        onSubmit: values => {
+            alert(JSON.stringify(values, null, 2));
+        },
+    });
+
+    const { handleSubmit, handleChange, handleBlur, values, touched, errors } = formik;
     return (
         <div>
             {/* Cart */}
@@ -84,17 +107,38 @@ function Contect(props) {
                 <div className="container">
                     <div className="flex-w flex-tr">
                         <div className="size-210 bor10 p-lr-70 p-t-55 p-b-70 p-lr-15-lg w-full-md">
-                            <form>
+                            <form onSubmit={handleSubmit}>
                                 <h4 className="mtext-105 cl2 txt-center p-b-30">
                                     Send Us A Message
                                 </h4>
                                 <div className="bor8 m-b-20 how-pos4-parent">
-                                    <input className="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" type="text" name="email" placeholder="Your Email Address" />
+                                    <input className="stext-111 cl2 plh3 size-116 p-l-62 p-r-30"
+                                     type="text"
+                                      name="email"
+                                       placeholder="Your Email Address"
+                                       onChange={handleChange}
+                                       onBlur={handleBlur}
+                                       value={values.email}
+                                        />
                                     <img className="how-pos4 pointer-none" src="images/icons/icon-email.png" alt="ICON" />
                                 </div>
+                                <span style={{ color: "red", marginTop: "-10px" }}>
+                                        {touched.email && errors.email ? errors.email : ''}
+                                    </span>
                                 <div className="bor8 m-b-30">
-                                    <textarea className="stext-111 cl2 plh3 size-120 p-lr-28 p-tb-25" name="msg" placeholder="How Can We Help?" defaultValue={""} />
+                                    <textarea
+                                     className="stext-111 cl2 plh3 size-120 p-lr-28 p-tb-25"
+                                      name="message"
+                                       placeholder="How Can We Help?"
+                                        defaultValue={""}
+                                        onChange={handleChange}
+                                        onBlur={handleBlur}
+                                        value={values.message}
+                                         />
                                 </div>
+                                <span style={{ color: "red", marginTop: "-10px" }}>
+                                        {touched.message && errors.message ? errors.message : ''}
+                                    </span>
                                 <button className="flex-c-m stext-101 cl0 size-121 bg3 bor1 hov-btn3 p-lr-15 trans-04 pointer">
                                     Submit
                                 </button>
